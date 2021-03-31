@@ -137,7 +137,10 @@ public class MenuSwapperPlugin extends Plugin implements KeyListener
 		{
 			return;
 		}
-
+		if (option.equals("teleport") && target.equals("construct. cape(t)")
+		{
+			swap("tele to poh", option, target, index);
+		}
 		if (option.equals("talk-to"))
 		{
 			if (config.swapPlank() && target.equals("sawmill operator"))
